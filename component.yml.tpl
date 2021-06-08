@@ -10,7 +10,7 @@ phases:
         action: ExecuteBash
         inputs:
           commands:
-            - sudo yum remove -y ansible
+            - sudo yum remove -y ansible ${additional_pkgs}
             - sudo yum autoremove -y
             - sudo rm -rf packer-generic-images
             - sudo rm -rf ~/.ansible/roles /usr/share/ansible/roles /etc/ansible/roles

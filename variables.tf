@@ -1,3 +1,9 @@
+variable "additional_packages" {
+  default     = ""
+  description = "Space separated list of additional packages included for ansible setup that may need to be removed after running ansible"
+  type        = string
+}
+
 variable "change_description" {
   default     = null
   description = "description of changes since last version"
