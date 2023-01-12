@@ -8,7 +8,7 @@ Template repository for terraform modules. Good for any cloud and any provider.
 [![pre-commit-check](https://github.com/rhythmictech/terraform-aws-component-ansible-teardown/workflows/pre-commit-check/badge.svg?branch=master&event=push)](https://github.com/rhythmictech/terraform-aws-component-ansible-teardown/actions?query=workflow%3Apre-commit-check+event%3Apush+branch%3Amaster)
 <a href="https://twitter.com/intent/follow?screen_name=RhythmicTech"><img src="https://img.shields.io/twitter/follow/RhythmicTech?style=social&logo=twitter" alt="follow on Twitter"></a>
 
-Terraform module that creates an EC2 Image Builder component with CloudFormation which uninstalls Ansible on Amazon Linux 2 in order to leave a clean image if Ansible is not desired on the final image.
+Terraform module that creates an EC2 Image Builder component which uninstalls Ansible on Amazon Linux 2 in order to leave a clean image if Ansible is not desired on the final image.
 
 ## Example
 ```hcl
@@ -103,7 +103,7 @@ module "test_pipeline" {
 ```
 
 ## About
-This module bridges the gap allowing Terraform to create an EC2 Image Builder component which uninstalls Ansible on Amazon Linux 2 until native support for Image Builder is added to Terraform
+This module creates an EC2 Image Builder component which uninstalls Ansible on Amazon Linux 2.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
