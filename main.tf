@@ -30,6 +30,6 @@ resource "aws_imagebuilder_component" "this" {
 
   tags = merge(
     var.tags,
-    { Name : "${var.name}-stack" }
+    { Name : "${var.name}" }
   )
 }
