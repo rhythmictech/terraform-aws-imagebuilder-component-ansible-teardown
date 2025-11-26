@@ -11,7 +11,7 @@ phases:
         inputs:
           commands:
             - sudo yum remove -y ${additional_pkgs}
-            - sudo rm -rf ${ansible_venv_path}
+            - sudo rm -rf ${ansible_pyenv_path}
             - sudo yum autoremove -y
             - sudo rm -rf packer-generic-images
             - sudo rm -rf ~/.ansible/roles /usr/share/ansible/roles /etc/ansible/roles
